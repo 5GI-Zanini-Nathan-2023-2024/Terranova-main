@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    background-color: #212121 !important;
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+article {
+    text-align: center;
+}
+
+p, label {
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+/* Stile comune ad entrambi i blocchi corrispondenti ai contenitori dei form di login e registrazione: */
+div#loginContainer, div#registrationContainer {
+    position: relative;
+    text-align: center;
+    border-radius: 15px;
+}
+  
+/* Stile del blocco avente come id la stringa "loginContainer" (ovvero il blocco corrispondente al contenitore più esterno, di colore giallo, del form di login): */
+div#loginContainer {
+    background-color: #FEE715;
+    margin-top: 0%;
+    left: 35%;
+    width: 630px;
+    height: 660px;
+}
+  
+/* Stile dei titoli contenuti all'interno dei blocchi corrispondenti alle finestre di sign in: */
+div#loginContainer h2, div#registrationContainer h2 {
+    font-size: 50px;
+    font-family: sans-serif;
+    color: #101820;
+}
+
+/* Stile dei form aventi come classe la stringa "formPersonalizzato" (ovvero i form di login e registrazione): */
+form.formPersonalizzato {
+    position: relative;
+    display: inline-block;
+    width: 50vw;
+    padding: 2rem 4rem;
+    border-radius: 20px;
+}
+  
+  /* Stile dei form aventi come classe la stringa "formPersonalizzato" contenuti all'interno di blocchi aventi come classe la stringa "loginContainer" (ovvero il form di login): */
+div#loginContainer form.formPersonalizzato {
+    background-color: #101820;
+    max-width: 70%;
+}
+  
+/* Stile dei form aventi come classe la stringa "formPersonalizzato" contenuti all'interno di blocchi aventi come classe la stringa "registrationContainer" (ovvero il form di registrazione): */
+div#registrationContainer form.formPersonalizzato {
+    bottom: 130px;
+    max-width: 80%;
+}
+
+div#informationUpdateContainer form.formPersonalizzato {
+    bottom: 110px;
+    max-width: 80%;
+}
+  
+/* Stile dei blocchi aventi come classe la stringa "gruppoInput": */
+.gruppoInput {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+  
+/* Stile delle descrizioni dei campi input contenute all'interno di blocchi aventi come classe la stringa "gruppoInput": */
+.gruppoInput label {
+    color: #fff;
+    font-family: tahoma;
+}
+  
+/* Stile degli elementi "span" contenuti all'interno di blocchi aventi come classe la stringa "gruppoInput": */
+.gruppoInput span {
+    color : #888;
+    font-family : tahoma;
+    font-size: 11px;
+}
+  
+/* Stile dei blocchi aventi come classe la stringa "contenitoreInputIcona": */
+.contenitoreInputIcona {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #374669;
+    border-radius: 5px;
+    background: #ffffff;
+    color: #000000;
+    align-items: center;
+    overflow: hidden;
+}
+  
+/* Stile degli elementi aventi come classe la stringa "errore": */
+.errore {
+    border: 3px solid #ff0000;
+    background-color: #fdd3d3;
+}
+  
+/* Stile dei campi input contenuti all'interno dei blocchi aventi come classe la stringa "contenitoreInputIcona": */
+.contenitoreInputIcona input {
+    max-width : 250px;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 20px;
+    padding: .5em;
+    color: inherit;
+    background : none;
+    background-color : transperant;
+}
+  
+/* Stile delle icone aventi come classe la stringa "fa" e contenute all'interno di blocchi di classe "contenitoreInputIcona": */
+.contenitoreInputIcona .fa {
+    padding : 20px;
+}
+  
+/* Stile delle icone aventi come classe la stringa "fa-check": */
+.fa-check {
+    color: #00ff00;
+}
+  
+/* Stile delle icone aventi come classe la stringa "fa-times": */
+  .fa-times {
+    color: #ff0000;
+}
+  
+/* Stile delle icone aventi come classe la stringa "inputIcon": */
+i.inputIcon {
+    color: #ffffff;
+    background-color: #374669;
+}
+  
+/* Stile degli input di tipo "date" (ovvero le date da inserire): */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+  
+/* Stile degli input di tipo "checkbox" (ovvero le caselle da spuntare): */
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+  
+/* Stile comune alle icone aventi come classi le stringhe "fa" e "fa-eye" o "fa-eye-slash" al momento del passaggio del mouse: */
+.fa.fa-eye:hover, .fa.fa-eye-slash:hover {
+    cursor: pointer;
+}
+  
+/* Stile dei paragrafi aventi come classe la stringa "avvertimenti": */
+p.avvertimenti {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ff0000;
+}
+  
+/* Stile dei paragrafi aventi come classe la stringa "conferme": */
+p.conferme {
+    font-size: 25px;
+    font-weight: bold;
+    color: #00ff00;
+}
+
+/* --- STILE DEI BOTTONI: --- */
+  
+/* Classe che definisce lo stile dei bottoni utili per effettuare la registrazione di un autore, un editore o un libro all'interno del database della biblioteca: */
+button.bottoniInvioForm {
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #00ff00;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 9px #666;
+}
+  
+/* Classe che definisce lo stile "hover" (presenza del cursore sopra al bottone) dei bottoni utili per effettuare la registrazione o il login di un utente all'interno del database: */
+button.bottoniInvioForm:hover {
+    cursor: pointer;
+    background-color: #00ff00;
+}
+  
+/* Classe che definisce lo stile "active" (pressione del bottone) dei bottoni utili per effettuare la registrazione o il login di un utente all'interno del database: */
+button.bottoniInvioForm:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+  
+/* Stile dei paragrafi di avvertimento utilizzati per comunicare all'utente eventuali errori durante la registrazione o l'accesso: */
+p.avvertimenti {
+    color: #ff0000;
+}
+  
+/* Stile del bottone utilizzato per confermare il login (e quindi l'accesso alla propria area riservata): */
+button#bottoneConfermaLogin {
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #00ff00;
+}
